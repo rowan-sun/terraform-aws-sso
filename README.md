@@ -1,6 +1,6 @@
 # terraform-aws-sso
 
-[![Infrastructure Tests](https://www.bridgecrew.cloud/badges/github/cloud-security-labs/terraform-aws-sso/general)](https://www.bridgecrew.cloud/link/badge?vcs=github&fullRepo=cloud-security-labs%2Fterraform-aws-sso&benchmark=INFRASTRUCTURE+SECURITY)
+[![Infrastructure Tests](https://www.bridgecrew.cloud/badges/github/cloud-security-labs/terraform-aws-sso/general)](https://www.bridgecrew.cloud/link/badge?vcs=github&fullRepo=cloud-security-labs%2Fterraform-aws-sso&benchmark=INFRASTRUCTURE+SECURITY) [![Infrastructure Tests](https://www.bridgecrew.cloud/badges/github/cloud-security-labs/terraform-aws-sso/cis_aws)](https://www.bridgecrew.cloud/link/badge?vcs=github&fullRepo=cloud-security-labs%2Fterraform-aws-sso&benchmark=CIS+AWS+V1.2)
 
 ## Assumptions
 
