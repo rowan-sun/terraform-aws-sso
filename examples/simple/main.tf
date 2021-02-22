@@ -1,24 +1,30 @@
 provider "aws" {
-  region = "eu-west-1"
+  region = "us-east-1"
 }
 
 module "permission_set" {
   source = "../../"
 
-  name               = "DevAdmins"
-  description        = "DevAdmins permission set"
-  group_display_name = "Developers"
-  session_duration   = "PT2H"
+  name             = "test"
+  description      = "Provides full test access to AWS services and resources"
+  session_duration = "PT2H"
 
-  account_ids = [
-    "123456789000",
-    "123456789000"
+  account_assignments = [
+    {
+      group_display_name = "test"
+      account_id         = "485469387396"
+    },
+    {
+      group_display_name = "test"
+      account_id         = "768397815941"
+    }
   ]
-
   managed_policy_arns = [
-    "arn:aws:iam::aws:policy/AdministratorAccess",
     "arn:aws:iam::aws:policy/AdministratorAccess"
   ]
+
+  /* inline_policy = "" */
+  inline_policy = data.aws_iam_policy_document.example.json
 
   tags = {
     Just_For_Testing = "True"

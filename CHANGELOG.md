@@ -12,3 +12,9 @@ Update README.md
 
 - account_ids as list
 - managed_policy_arns as list
+
+## v0.3.0
+
+- account_assignments as list of maps
+- inline_policy addition
+- add locals.tf

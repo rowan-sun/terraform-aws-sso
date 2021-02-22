@@ -1,6 +1,6 @@
 # Simple AWS SSO Permission Set
 
-This example will create an SSO Permission Set, attach managed policy and existing Group to target account.
+This example will create an SSO Permission Set, attach managed policy and existing group/groups to target account/accounts.
 
 ## How to apply
 

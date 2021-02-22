@@ -1,8 +1,3 @@
-variable "group_display_name" {
-  type        = string
-  description = "The group's display name value"
-}
-
 variable "name" {
   type        = string
   description = "(Required, Forces new resource) The name of the Permission Set."
@@ -31,18 +26,23 @@ variable "session_duration" {
   description = "(Optional) The length of time that the application user sessions are valid in the ISO-8601 standard. Default: PT1H."
 }
 
-variable "account_ids" {
-  type        = list(string)
-  description = "(Required, Forces new resource) An AWS account identifier, typically a 10-12 digit string."
-}
-
 variable "managed_policy_arns" {
   type        = list(string)
   description = "Managed polices ARNs"
 }
 
-# future use
-# variable "inline_policy" {
-#   type        = any
-#   description = "describe your variable"
-# }
+variable "inline_policy" {
+  type        = any
+  description = "Inline policy JSON input"
+}
+
+variable "account_assignments" {
+  type = list(object(
+    {
+      account_id         = string
+      group_display_name = string
+    }
+    )
+  )
+}
+
