@@ -4,9 +4,9 @@
 
 ## Assumptions
 
-- AWS ORG created, with SSO enabled.
-- AWS SSO enabled.
-- AWS SSO Group is created.
+- AWS ORG Created
+- AWS SSO Enabled
+- AWS SSO Groups Created
 
 ## Requirements
 
