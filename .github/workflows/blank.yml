@@ -19,6 +19,7 @@ jobs:
   build:
     env:
       assume_role_arn: arn:aws:iam::593352196761:role/kw-sandbox-billing-github-actions-role
+      region: ap-northeast-2
       
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
