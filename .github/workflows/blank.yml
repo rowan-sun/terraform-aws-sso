@@ -18,7 +18,6 @@ jobs:
   # This workflow contains a single job called "build"
   build:
     permissions:
-      packages: write
       contents: read
       id-token: write
     env:
