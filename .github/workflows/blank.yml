@@ -17,6 +17,10 @@ on:
 jobs:
   # This workflow contains a single job called "build"
   build:
+    permissions:
+      packages: write
+      contents: read
+      id-token: write
     env:
       assume_role_arn: arn:aws:iam::593352196761:role/kw-sandbox-billing-github-actions-role
       region: ap-northeast-2
